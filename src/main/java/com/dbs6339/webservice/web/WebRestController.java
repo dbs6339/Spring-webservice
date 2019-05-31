@@ -1,4 +1,4 @@
-package com.dbs6339.springwebservice.web;
+package com.dbs6339.webservice.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

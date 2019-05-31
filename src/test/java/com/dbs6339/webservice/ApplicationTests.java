@@ -1,4 +1,4 @@
-package com.dbs6339.springwebservice;
+package com.dbs6339.webservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

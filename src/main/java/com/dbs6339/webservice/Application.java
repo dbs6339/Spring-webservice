@@ -1,4 +1,4 @@
-package com.dbs6339.springwebservice;
+package com.dbs6339.webservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

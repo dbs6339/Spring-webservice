@@ -1,4 +1,5 @@
 package com.dbs6339.webservice.web;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +18,12 @@ public class WebControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void 메인페이지_로딩() {
+    public void 메인페이지_로딩(){
         //when
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
         assertThat(body).contains("스프링부트로 시작하는 웹 서비스");
     }
+
 }

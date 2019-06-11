@@ -23,17 +23,17 @@ public class PostServiceTest {
     private PostsRepository postsRepository;
 
     @After
-    public void cleanup () {
+    public void cleanup() {
         postsRepository.deleteAll();
     }
 
     @Test
-    public void Dto데이터가_posts테이블에_저장된다 () {
+    public void Dto데이터가_posts테이블에_저장된다 (){
         //given
         PostsSaveRequestDto dto = PostsSaveRequestDto.builder()
-                .author("jojoldu@gmail.com")
+                .author("dbs6339@naver.com")
                 .content("테스트")
-                .title("테스트 타이틀")
+                .title("테스트 제목")
                 .build();
 
         //when

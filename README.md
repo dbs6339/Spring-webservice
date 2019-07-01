@@ -1,6 +1,6 @@
 # spring-webservice
 
-## Springboot - Gradle - Git Feat.Jojoldo
+## Springboot - Gradle - Git // Feat.Jojoldo
 
 ### 개발일지
 

@@ -1,6 +1,7 @@
-package com.dbs6339.webservice.dto.posts;
+package com.dbs6339.webservice.dto.User;
 
-import com.dbs6339.webservice.domain.posts.Posts;
+
+import com.dbs6339.webservice.domain.User.User;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -8,19 +9,23 @@ import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 @Getter
-public class PostsMainResponseDto {
+public class UserMainResponseDto {
+
 
 
     private Long id;
-    private String title;
-    private String author;
+    private String name;
+    private String passwd;
+    private String email;
+    private int active;
     private String modifiedDate;
 
-
-    public PostsMainResponseDto(Posts entity) {
+    public UserMainResponseDto(User entity){
         id = entity.getId();
-        title = entity.getTitle();
-        author = entity.getAuthor();
+        name = entity.getName();
+        passwd = entity.getPasswd();
+        email = entity.getEmail();
+        active = entity.getActive();
         modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 

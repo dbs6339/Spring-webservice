@@ -46,6 +46,19 @@ public class UserRepositoryTest {
         assertThat(user.getPasswd(), is("11111111"));
         assertThat(user.getEmail(), is("dbs6339@naver.com"));
     }
+        @Test
+    public void 유저확인() {
+        //given
+        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").build());
+        String email = "dbs6339@naver.com";
+        //when
+        User user = userRepository.findByEmail(email);
+
+        //then
+        assertThat(user.getName(), is("윤은수"));
+        assertThat(user.getPasswd(), is("11111111"));
+        assertThat(user.getEmail(), is("dbs6339@naver.com"));
+    }
     @Test
     public void BaseTimeEntity_등록(){
         //given

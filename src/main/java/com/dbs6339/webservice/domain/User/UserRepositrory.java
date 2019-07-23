@@ -11,4 +11,6 @@ public interface UserRepositrory extends JpaRepository<User,Long> {
             "FROM User u " +
             "ORDER BY u.id DESC")
     Stream<User> findAllDesc();
+
+    User findByEmail(String email);
 }

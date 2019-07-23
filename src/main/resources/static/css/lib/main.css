@@ -1,0 +1,122 @@
+
+.all{
+	font-family : Hack, monospace;
+}
+html {
+  background: url(/img/bgimg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.media_icon{
+	position: absolute;
+	top:10%;
+	text-align: center;
+	margin-top: auto;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}.List{
+	background-color:#fff
+ }
+.icon{
+	
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.banner{
+	position : absolute;
+	top: 45%;
+	margin-top: auto;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	opacity: 0.7;
+}
+.invisible{
+	clear: none;
+	border: 0px none;
+	float: none;
+}
+#number {
+	background-color: transparent;
+	height: 40px;
+	outline: none;
+	width: 150px;
+	color: white;
+	text-align: center;
+	font-size :30px;
+	margin: 10px;
+	margin-left: 35px;
+}
+.board{
+	border-radius : 20px;
+	background-color:#fff;
+	margin : 10px;
+	height: 60px;
+}
+#btn_hide{
+	background-color: transparent;
+	outline: none;
+	color:white;
+	border:0px;
+	left: 0px;
+	right: 0px;	
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size : 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+@media screen and (min-width:550px) {
+	.icon{
+		display: block;
+	}
+	.media_icon{
+		display: none;
+	}
+}
+@media screen and (max-width:549px) {
+  .banner{
+		font-size: 20px;
+	}
+	#number {
+		font-size :15px;
+	}
+	#button{
+		font-size : 15px;
+	}
+	.icon{
+		display:none;
+	}
+	.media_icon{
+		display: block;
+	}
+}
+@media screen and (max-height:699px) {
+  .banner{
+		font-size: 20px;
+	}
+	#number {
+		font-size :15px;
+	}
+	#button{
+		font-size : 15px;
+	}
+	.icon{
+		display: none;
+	}
+	.media_icon{
+		display: block;
+	}
+}

@@ -35,7 +35,7 @@ public class UserRepositoryTest {
     @Test
     public void 유저목록_불러오기() {
         //given
-        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").build());
+        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").active(0).build());
 
         //when
         List<User> userList = userRepository.findAll();
@@ -45,25 +45,28 @@ public class UserRepositoryTest {
         assertThat(user.getName(), is("윤은수"));
         assertThat(user.getPasswd(), is("11111111"));
         assertThat(user.getEmail(), is("dbs6339@naver.com"));
+        assertThat(user.getActive(), is(0));
     }
         @Test
     public void 유저확인() {
         //given
-        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").build());
+        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").active(0).build());
         String email = "dbs6339@naver.com";
         //when
         User user = userRepository.findByEmail(email);
 
-        //then
+        //thenS
         assertThat(user.getName(), is("윤은수"));
         assertThat(user.getPasswd(), is("11111111"));
         assertThat(user.getEmail(), is("dbs6339@naver.com"));
+        assertThat(user.getActive(), is(0));
     }
     @Test
     public void BaseTimeEntity_등록(){
         //given
+
         LocalDateTime now = LocalDateTime.now();
-        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").build());
+        userRepository.save(User.builder().name("윤은수").passwd("11111111").email("dbs6339@naver.com").active(0).build());
 
         //when
         List<User> userList = userRepository.findAll();
